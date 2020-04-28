@@ -40,8 +40,8 @@ CREATE TABLE Reservation
   GuestArrivalTime INT NOT NULL,
   GuestArrivalDate INT NOT NULL,
   TableID INT NOT NULL,
-  FOREIGN KEY (GuestID),
-  FOREIGN KEY (TableID)
+  FOREIGN KEY (GuestID) REFERENCES Guests(GuestID),
+  FOREIGN KEY (TableID) REFERENCES CafeTable(TableID)
 );
 
 CREATE TABLE MustPay
