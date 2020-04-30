@@ -1,4 +1,4 @@
-CREATE TABLE Guests
+CREATE TABLE Guest
 (
   GuestID INT NOT NULL,
   NickName VARCHAR(30) NOT NULL,
@@ -16,15 +16,6 @@ CREATE TABLE Staff
   PRIMARY KEY (StaffSSN)
 );
 
-CREATE TABLE Bill
-(
-  BillID INT NOT NULL,
-  Date DATE NOT NULL,
-  Timeofday INT NOT NULL,
-  StaffSSN INT NOT NULL,
-  FOREIGN KEY (StaffSSN) REFERENCES Staff(StaffSSN)
-);
-
 CREATE TABLE CafeTable
 (
   TableID INT NOT NULL,
@@ -34,39 +25,20 @@ CREATE TABLE CafeTable
 
 CREATE TABLE Reservation
 (
-  GuestID INT NOT NULL,
-  NickName VARCHAR(30) NOT NULL,
+	ReservationID INT(5) NOT NULL AUTO_INCREMENT,
+	Fname VARCHAR(30) NOT NULL,
+	Lname	VARCHAR(30) NOT NULL,
   PhoneNumber INT NOT NULL,
+  GuestAmount INT NOT NULL,
   GuestArrivalTime INT NOT NULL,
-  GuestArrivalDate INT NOT NULL,
-  TableID INT NOT NULL,
-  FOREIGN KEY (GuestID) REFERENCES Guests(GuestID),
-  FOREIGN KEY (TableID) REFERENCES CafeTable(TableID)
-);
-
-CREATE TABLE MustPay
-(
-  BillID INT NOT NULL,
-  GuestID INT NOT NULL,
-  FOREIGN KEY (BillID),
-  FOREIGN KEY (GuestID)
+  GuestArrivalDate DATE NOT NULL,
+  PRIMARY KEY (ReservationID)
 );
 
 CREATE TABLE WorksAt
 (
   StaffSSN INT NOT NULL,
   TableID INT NOT NULL,
-  FOREIGN KEY (StaffSSN),
-  FOREIGN KEY (TableID)
+  FOREIGN KEY (StaffSSN) REFERENCES Staff(StaffSSN),
+  FOREIGN KEY (TableID) REFERENCES CafeTable(TableID)
  );
-
-insert into Guest values (001,"Smith", 3);
-insert into Guest values (002,"Jenkins", 2);
-
-insert into Staff values (111111,"Leonardo", "Dicaprio", 60144060, 5000);
-insert into Staff values (222222,"Matt", "Damon", 50486232, 4500);
-
-insert into CafeTable values (1, 4);
-insert into CafeTable values (2, 4);
-insert into CafeTable values (3, 6);
-insert into CafeTable values (4, 6);

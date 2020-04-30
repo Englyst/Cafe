@@ -20,7 +20,7 @@
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-	
+
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
@@ -34,6 +34,9 @@
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="login.php">Login</a>
 				</li>
 		</div>
 	</nav>
@@ -63,9 +66,9 @@
 			</div>
 			<!--- Slide 3 -->
 			<div class="carousel-item" style="background-image: url(img/bar.png);">
-			</div> 
+			</div>
 			<!--- End Carousel Inner -->
-			
+
 			<!--- Prev and Next buttons -->
 			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -84,69 +87,69 @@
 	<div class="col-12 narrow text-center">
 		<h1>Summertime Madness</h1>
 		<p class="lead">To celebrate the lovely summer, we're currently offering a 20% discount to all reservations between 10am to 4pm.</p>
-		<a class="btn btn-secondary btn-md" href="#contact" target="_blank">Reserve Now!</a>
+		<a class="btn btn-secondary btn-md" href="form.html" target="_blank">Reserve Now!</a>
 	</div>
 
-	
+
 	<!--- Jumbotron -->
 	<div class="jumbotron container-fluid">
 			<div class="col-12 text-center">
 				<h3 class="heading">Menu</h3>
 				<div class="heading-underline"></div>
 			</div>
-			
+
 		<div class="row no-padding">
-	
+
 			<div class="col-sm-4">
 				<div class="menu">
 				<a href="img/menu/1.png"></a>
 					<img src="img/menu/1.png">
 				</div>
 			</div>
-		
+
 			<div class="col-sm-4">
 				<div class="menu">
 				<a href="img/menu/2.png"></a>
 					<img src="img/menu/2.png">
 				</div>
 			</div>
-		
+
 			<div class="col-sm-4">
 				<div class="menu">
 				<a href="img/menu/3.png"></a>
 					<img src="img/menu/3.png">
 				</div>
 			</div>
-		
+
 			<div class="col-sm-4">
 				<div class="menu">
 				<a href="img/menu/4.png"></a>
 					<img src="img/menu/4.png">
 				</div>
 			</div>
-		
+
 			<div class="col-sm-4">
 				<div class="menu">
 				<a href="img/menu/5.png"></a>
 					<img src="img/menu/5.png">
 				</div>
 			</div>
-		
+
 			<div class="col-sm-4">
 				<div class="menu">
 				<a href="img/menu/6.png"></a>
 					<img src="img/menu/6.png">
 				</div>
 			</div>
-			
+
 			<div class="narrow text-center">
 				<div class="col-12">
 					<p class="lead">Come by for an exclusive fine dining experience</p>
 			</div>
-			
+
 		</div>	<!--- End Row -->
 	</div>	<!--- End Jumbotron -->
-	
+
 </div>	<!--- End Menu Section -->
 
 <!--- Start About Section -->
@@ -156,7 +159,7 @@
 		<h3 class="heading">About</h3>
 		<div class="heading-underline"></div>
 	</div>
-	
+
 <div class="row padding">
 
 	<div class="col-md-6">
@@ -165,18 +168,18 @@
 			<div class="card-body">
 				<h4>Head Chef Luigi</h4>
 				<p>"Is leading an exception kitchen staff with over 50 years combined fine dining experience. Always striving to provide our guests with an unforgettable experience."</p>
-				
+
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="col-md-6">
 		<div class="card text-center">
 			<img class="card-img-top" src="img/team/team2.png">
 			<div class="card-body">
 				<h4>Manager Mario Russo</h4>
 				<p>"Has carried on the family tradition of fine dining restaurants for over 4 generations, with great focus on customer service and exceptional product quality."</p>
-				
+
 			</div>
 		</div>
 	</div>
@@ -197,12 +200,12 @@
 		<p>For reservations, special events or delivery please contact us through phone or email.</p>
 		<strong>Contact Info</strong>
 		<p>(+66) 88 48 3788<br>email@cafebangkok.com</p>
-		
+
 		<a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
 		<a href="" target="_blank"><i class="fab fa-twitter-square"></i></a>
 		<a href="" target="_blank"><i class="fab fa-instagram"></i></a>
 	</div>
-	
+
 	<hr class="socket">
 	&copy; COSC 4120 Loui Englyst
 
